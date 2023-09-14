@@ -1,0 +1,19 @@
+cd documents/github
+git clone git clone https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
+cd GitHub-Collaboration-Practice
+git pull
+
+git checkout -b rachel_new
+nano "File 1.txt"
+git add "File 1.txt"
+git commit -m "Rachel added details to file 1"
+git push
+git push --set-upstream origin rachel_new
+
+touch commands.txt 
+nano commands.txt
+git add commands.txt
+git commit -m "Rachel added commands file as part of 4d."
+git push
+git push --set-upstream origin rachel_new
+
