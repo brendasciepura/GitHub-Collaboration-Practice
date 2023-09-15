@@ -1,2 +1,11 @@
 Group Project
 "Degree Programs & Research Interest of Members"
+
+Interests: 
+* Public Policy 
+* Administrative burden
+* Government workforce mental health
+
+Degree: 
+* PhD in Public Policy
+
