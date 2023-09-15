@@ -1,0 +1,67 @@
+PART 3: COLLABORATE WITH TEAMMATES 
+
+1. Have one group member (me) initialize a new repository titled "Github collaboration practice". 
+(Done in GitHub)
+
+2. Invite other members to collaborate
+(Done in Github)
+
+2. Clone the repository 
+(base) brenda@Brendas-MacBook-Air-2 Project 1 % cd ~
+(base) brenda@Brendas-MacBook-Air-2 ~ % cd github
+(base) brenda@Brendas-MacBook-Air-2 github % git clone https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
+Cloning into "Github-Collaboration-Practice"...
+remote: Enumerating objects: 3, one.
+remote: Counting objects: 100%(3.3), done. 
+Remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3.3), done. 
+
+(base) brenda@Brendas-MacBook-Air-2 github % ls
+05. Poverty Attribution and Deservingness	GitHub-Collaboration-Practice
+ARE 212						brendasciepura.github.io
+ARE 213						git-challenge-2
+Computational-Social-Science-Projects		ph242_final_project
+
+
+3. Create markdown or text file with the text "Group project" on the first line.
+
+(base) brenda@Brendas-MacBook-Air-2 github % cd GitHub-Collaboration-Practice
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % touch "File 1.txt"
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % nano "File 1.txt"
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % cat "File 1.txt"
+Group Project
+
+4b. Check out a new branch 
+(base) brenda@Brendas-MacBook-Air-2 github % cd GitHub-Collaboration-Practice
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % gitHub % git checkout -b new_branch
+
+4c. The member who initialized the repository should add this text: “Degree Programs & Research Interests of Members”. They should then add, commit, and push changes to the repo. Important: This
+step should ONLY be done by the member who initialized the repository.
+
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % nano "File 1.txt"
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % cat "File 1.txt"
+Group Project
+"Degree Programs & Research Interest of Members"
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % git add "File 1.txt"
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % git commit -m "added text for people to complete their program interests"
+[main 9cc20e7] added text for people to complete their program interests
+ 1 file changed, 2 insertions(+)
+ create mode 100644 File 1.txt
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 380 bytes | 380.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
+   a419d5b..9cc20e7  main -> main
+
+4.e Edit the text file to add your degree program and some keywords
+for your research interests.
+
+4.f. Create a new text file with all of the commands you ran, and the
+commands you will run to add, commit, and push changes to the
+repo.
+
+4.g. Add, commit, and push your changes to the repo
