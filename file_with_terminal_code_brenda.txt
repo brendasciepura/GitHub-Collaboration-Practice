@@ -57,11 +57,68 @@ Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
    a419d5b..9cc20e7  main -> main
 
+4.d. Merge main with new_branch -- I did the branch after I created these changed in main, so when I run the command git merge main it says it's already up to date
+GitHub-Collaboration-Practice git:(new_branch_brenda) git merge main
+Already up to date.
+
 4.e Edit the text file to add your degree program and some keywords
 for your research interests.
+
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) nano "File 1.txt"
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git status
+On branch new_branch_brenda
+Your branch is up to date with 'origin/new_branch_brenda'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   File 1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git add "File 1.txt"
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git commit -m "added my degree"
+[new_branch_brenda e4e4961] added my degree
+ 1 file changed, 9 insertions(+)
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 477 bytes | 477.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
+   1ae9bd2..e4e4961  new_branch_brenda -> new_branch_brenda
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda)
 
 4.f. Create a new text file with all of the commands you ran, and the
 commands you will run to add, commit, and push changes to the
 repo.
+
+-- Copied the file and added my name to it 
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) cp file_with_terminal_code.txt file_with_terminal_code_brenda.txt
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git status
+On branch new_branch_brenda
+Your branch is up to date with 'origin/new_branch_brenda'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	file_with_terminal_code_brenda.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git add file_with_terminal_code_brenda.txt
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git commit -m "made a copy of this file and added my name to it so it does not conflict with other people"
+[new_branch_brenda 1285e01] made a copy of this file and added my name to it so it does not conflict with other people
+ 1 file changed, 67 insertions(+)
+ create mode 100644 file_with_terminal_code_brenda.txt
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 319 bytes | 319.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
+   e4e4961..1285e01  new_branch_brenda -> new_branch_brenda
 
 4.g. Add, commit, and push your changes to the repo
