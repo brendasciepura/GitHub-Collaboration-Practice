@@ -1,0 +1,124 @@
+PART 3: COLLABORATE WITH TEAMMATES 
+
+1. Have one group member (me) initialize a new repository titled "Github collaboration practice". 
+(Done in GitHub)
+
+2. Invite other members to collaborate
+(Done in Github)
+
+2. Clone the repository 
+(base) brenda@Brendas-MacBook-Air-2 Project 1 % cd ~
+(base) brenda@Brendas-MacBook-Air-2 ~ % cd github
+(base) brenda@Brendas-MacBook-Air-2 github % git clone https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
+Cloning into "Github-Collaboration-Practice"...
+remote: Enumerating objects: 3, one.
+remote: Counting objects: 100%(3.3), done. 
+Remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3.3), done. 
+
+(base) brenda@Brendas-MacBook-Air-2 github % ls
+05. Poverty Attribution and Deservingness	GitHub-Collaboration-Practice
+ARE 212						brendasciepura.github.io
+ARE 213						git-challenge-2
+Computational-Social-Science-Projects		ph242_final_project
+
+
+3. Create markdown or text file with the text "Group project" on the first line.
+
+(base) brenda@Brendas-MacBook-Air-2 github % cd GitHub-Collaboration-Practice
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % touch "File 1.txt"
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % nano "File 1.txt"
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % cat "File 1.txt"
+Group Project
+
+4b. Check out a new branch 
+(base) brenda@Brendas-MacBook-Air-2 github % cd GitHub-Collaboration-Practice
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % gitHub % git checkout -b new_branch
+
+4c. The member who initialized the repository should add this text: “Degree Programs & Research Interests of Members”. They should then add, commit, and push changes to the repo. Important: This
+step should ONLY be done by the member who initialized the repository.
+
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % nano "File 1.txt"
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % cat "File 1.txt"
+Group Project
+"Degree Programs & Research Interest of Members"
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % git add "File 1.txt"
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % git commit -m "added text for people to complete their program interests"
+[main 9cc20e7] added text for people to complete their program interests
+ 1 file changed, 2 insertions(+)
+ create mode 100644 File 1.txt
+(base) brenda@Brendas-MacBook-Air-2 GitHub-Collaboration-Practice % git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 380 bytes | 380.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
+   a419d5b..9cc20e7  main -> main
+
+4.d. Merge main with new_branch -- I did the branch after I created these changed in main, so when I run the command git merge main it says it's already up to date
+GitHub-Collaboration-Practice git:(new_branch_brenda) git merge main
+Already up to date.
+
+4.e Edit the text file to add your degree program and some keywords
+for your research interests.
+
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) nano "File 1.txt"
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git status
+On branch new_branch_brenda
+Your branch is up to date with 'origin/new_branch_brenda'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   File 1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git add "File 1.txt"
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git commit -m "added my degree"
+[new_branch_brenda e4e4961] added my degree
+ 1 file changed, 9 insertions(+)
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 477 bytes | 477.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
+   1ae9bd2..e4e4961  new_branch_brenda -> new_branch_brenda
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda)
+
+4.f. Create a new text file with all of the commands you ran, and the
+commands you will run to add, commit, and push changes to the
+repo.
+
+-- Copied the file and added my name to it 
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) cp file_with_terminal_code.txt file_with_terminal_code_brenda.txt
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git status
+On branch new_branch_brenda
+Your branch is up to date with 'origin/new_branch_brenda'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	file_with_terminal_code_brenda.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git add file_with_terminal_code_brenda.txt
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) ✗ git commit -m "made a copy of this file and added my name to it so it does not conflict with other people"
+[new_branch_brenda 1285e01] made a copy of this file and added my name to it so it does not conflict with other people
+ 1 file changed, 67 insertions(+)
+ create mode 100644 file_with_terminal_code_brenda.txt
+➜  GitHub-Collaboration-Practice git:(new_branch_brenda) git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 319 bytes | 319.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
+   e4e4961..1285e01  new_branch_brenda -> new_branch_brenda
+
+4.g. Add, commit, and push your changes to the repo
