@@ -1,0 +1,12 @@
+cd git
+git clone https://github.com/brendasciepura/GitHub-Collaboration-Practice.git
+cd GitHub-Collaboration-Practice
+
+git checkout -b omair_branch
+vim “File 1.txt”
+touch omair_commands.txt
+vim omair_commands.txt
+
+git add “File 1.txt” “omair_commands.txt”
+git commit -m “add Omair’s commands txt file + edits to File 1 .txt to Brenda’s repository”
+git push --set-upstream origin omair_branch
