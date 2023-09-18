@@ -1,11 +1,12 @@
 Group Project
 "Degree Programs & Research Interest of Members"
 
+Name: Brenda Sciepura 
+
 Interests: 
 * Public Policy 
 * Administrative burden
 * Government workforce mental health
-
 Degree: 
 * PhD in Public Policy
 
