@@ -1,6 +1,23 @@
 Group Project
 "Degree Programs & Research Interest of Members"
 
+
+Name: Brenda Sciepura 
+Interests: 
+* Public Policy 
+* Administrative burden
+* Government workforce mental health
+Degree: 
+* PhD in Public Policy
+
+Name: Omair Gill
+Interests: 
+* Public Policy
+* Criminal Justice 
+* Law
+Degree: 
+* PhD in Public Policy
+
 Rachel Pizatella-Haswell
 Department: Public Policy PhD, 2nd Year 
 Research interests: My research lies at the intersection of financial inclusion and social protection.
