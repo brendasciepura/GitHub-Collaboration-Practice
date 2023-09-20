@@ -1,8 +1,8 @@
 Group Project
 "Degree Programs & Research Interest of Members"
 
-Name: Brenda Sciepura 
 
+Name: Brenda Sciepura 
 Interests: 
 * Public Policy 
 * Administrative burden
@@ -18,3 +18,6 @@ Interests:
 Degree: 
 * PhD in Public Policy
 
+Rachel Pizatella-Haswell
+Department: Public Policy PhD, 2nd Year 
+Research interests: My research lies at the intersection of financial inclusion and social protection.
